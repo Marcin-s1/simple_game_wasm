@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <style>
+      .select_game {
+        width: 400px;
+        height: 100px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="select_game">
+      <form>
+        <label for="game_type">Game type: </label>
+        <select name="game_type" id="game_type">
+          <option value="TicTacToe">TicTacToe</option>
+          <option value="Checker">Checker</option>
+        </select>
+      </form>
+    </div>
+    <canvas id="game-of-life-canvas"></canvas>
+    <div>
+      <canvas id="checkers-canvas" width="300" height="300"></canvas>
+    </div>
+    <script src="./bootstrap.js"></script>
+    <br/>
+    <div>
+      <from>
+        <label for="state">State</label><br>
+        <input type="text" id="state" name="State" value="Not started" disabled><br>
+        <label for="player1">Player1</label><br>
+        <input type="text" id="player1" name="Player1"><br>
+        <label for="player2">Player2</label><br>
+        <input type="text" id="player2" name="Player2"><br>
+        <input type="submit" id="start-button" value="Start">
+      </from>
+  </div>
+
+  </body>
+</html>
